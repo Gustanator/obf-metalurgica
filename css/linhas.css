@@ -1,0 +1,198 @@
+/* "Produtos" header */
+
+#produtos {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    background-image: linear-gradient(90deg, #000000 50%, #ffffff00 100%);
+}
+
+#produtos-msg {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+    margin-left: 40px;
+    position: relative;
+    margin-right: -200px;
+}
+
+#produtos-h1 {
+    height: auto;
+    width: fit-content;
+    max-width: 560px;
+    align-content: center;
+    color: white;
+    font-size: 54px;
+    font-weight: 900;
+}
+
+#produtos-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    z-index: -1;
+}
+
+
+/* "Nossos produtos" section */
+
+#nossos-produtos {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    height: fit-content;
+    color: black;
+    background-color: white;
+    padding: 20px 100px;
+}
+
+.linhas-produtos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    height: fit-content;
+    width: fit-content;
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: #333;
+}
+
+.produtos-h5 {
+    text-align: center;
+}
+
+.linhas-produtos:hover {
+    transform: translateY(-6px);
+    transition-duration: 400ms;
+    background-color: #222;
+}
+
+/* Grade de produtos */
+
+#linha-de-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 270px;
+    row-gap: 35px;
+    justify-items: center;
+    margin-bottom: 20px;
+
+    height: fit-content;
+    background-color: white;
+}
+
+.linha-prods {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+
+    height: 100%;
+    width: 20vw;
+    padding: 10px;
+    border-radius: 10px;
+
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+.linha-h4 {
+    color: red;
+}
+
+.linha-img {
+    width: 90%;
+    border-radius: 10px;
+}
+
+.linha-descricao {
+    color: white;
+    font-size: 17px;
+}
+
+@media (max-width: 1280px) {
+    /* Grade de produtos */
+
+    #linha-de-produtos {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 280px;
+    }
+
+    .linha-prods {
+        height: 100%;
+        width: 27vw;
+    }
+
+    .linha-img {
+        width: 85%;
+    }
+}
+
+@media (max-width: 920px) {
+    /* Grade de produtos */
+
+    #linha-de-produtos {
+        grid-template-rows: 240px;
+    }
+
+    .linha-img {
+        width: 95%;
+    }
+}
+
+@media (max-width: 720px) {
+    /* Grade de produtos */
+
+    #linha-de-produtos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 270px;
+    }
+
+    .linha-prods {
+        height: 100%;
+        width: 40vw;
+    }
+}
+
+@media (max-width: 640px) {
+    /* "Produtos" header */
+
+    #produtos {
+        background-image: linear-gradient(90deg, #000000 20%, #ffffff00 100%);
+    }
+
+    #produtos-h1 {
+        font-size: 42px;
+    }
+
+    /* "Nossos produtos" section */
+
+    #nossos-produtos {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Grade de produtos */
+
+    #linha-de-produtos {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .linha-prods {
+        height: fit-content;
+        width: 85vw;
+    }
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>OBF Metalúrgica - Início</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/global-styles.css" />
+    <link rel="stylesheet" href="./css/header-footer-styles.css" />
+    <link rel="stylesheet" href="./css/mainpage.css" />
+</head>
+
+<body>
+    <nav>
+        <a class="nav-links" href="./index.html"><img id="logo" src="./assets/logos/obf-long.png" /></a>
+        <div id="nav-bar">
+            <a class="nav-links" href="./index.html">Início</a>
+            <a class="nav-links" href="./sobre.html">Sobre nós</a>
+            <a class="nav-links" href="./linhas.html">Nossas peças</a>
+            <a class="nav-links" href="./contato.html">Entre em contato</a>
+        </div>
+        <div id="nav-burguer">
+            <button onclick="burguerButton()" id="burguer" class="nav-links">≡</button>
+        </div>
+        <div id="extra-nav-bar">
+            <a class="nav-links" href="./index.html">Início</a>
+            <a class="nav-links" href="./sobre.html">Sobre nós</a>
+            <a class="nav-links" href="./linhas.html">Nossas peças</a>
+            <a class="nav-links" href="./contato.html">Entre em contato</a>
+        </div>
+    </nav>
+
+    <main>
+        <header id="welcome">
+            <div id="welcome-msg">
+                <h1 id="welcome-h1">FABRICAMOS PEÇAS ESTAMPADAS</h1>
+                <a href="./linhas.html">
+                    <h2 id="welcome-h2">Conheça nossas peças!</h2>
+                </a>
+            </div>
+            <img src="./assets/mainpage/header.png" id="welcome-img" />
+        </header>
+
+        <section id="sobre-nos">
+            <div>
+                <img id="sobre-img" src="./assets/mainpage/sobre-nos.jpeg" />
+            </div>
+            <div id="sobre-texto">
+                <h2 id="sobre-h2">COMO ESTAMOS ENTRE OS MELHORES?</h2>
+                <h3 id="sobre-h3">“Nós fazemos e buscamos por produtos e soluções a todo o instante”</h3>
+                <p id="sobre-p">A Metalúrgica OBF, com sua vasta e consolidada experiência no mercado metalúrgico,
+                    reconhece os desafios de seus clientes em entregar sempre o melhor com a melhor qualidade e para que
+                    isso aconteça, o nosso foco sempre está em uma coisa: <b>VOCÊ</b>.</p>
+
+                <ul>
+                    <li class="sobre-li"> • Adotamos um Alto Controle de Qualidade</li>
+                    <li class="sobre-li"> • Contamos com Mão de Obra Qualificada</li>
+                    <li class="sobre-li"> • Temos a Tecnologia como Aliada</li>
+                </ul>
+                <a id="sobre-link" href="./sobre.html">Saiba mais sobre nós</a>
+            </div>
+            <div id="sobre-info">
+                <div class="info-div">
+                    <h2 id="info-h2">Desde 1994</h2>
+                    <p id="info-p">Mais de 30 anos de experiência no ramo de metalúrgica</p>
+                </div>
+                <div class="info-div">
+                    <h2 id="info-h2">00+ clientes</h2>
+                    <p id="info-p">Satisfeitos com nossos produtos</p>
+                </div>
+                <div class="info-div">
+                    <h2 id="info-h2">00+ projetos</h2>
+                    <p id="info-p">Finalizados ao longo de nossa história</p>
+                </div>
+                <div class="info-div">
+                    <h2 id="info-h2">00Mi+ peças</h2>
+                    <p id="info-p">Fabricados ao longo de nossa história</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="nossos-produtos">
+            <div id="produtos-texto">
+                <h2 id="produtos-h2">Nossos produtos</h2>
+                <p id="produtos-p">Atuávamos na terceirização de serviços na área de ferramentaria, porém, em 2005
+                    visando um mercado em
+                    crescimento, decidimos produzir peças estampadas para bicicletas, e em seguida para automóveis.</p>
+            </div>
+            <div id="produtos-grid">
+                <div class="linhas-produtos">
+                    <h4 class="produtos-h4">Peças Estampadas<br>para Bicicletas</h4>
+                    <img class="produtos-grid-img" src="./assets/mainpage/linha-bicicleta.webp" /> <br>
+                    <a class="link-saiba-mais">Saiba mais</a>
+                </div>
+                <div class="linhas-produtos">
+                    <h4 class="produtos-h4">Peças Estampadas<br>para Automóveis</h4>
+                    <img class="produtos-grid-img" src="./assets/mainpage/linha-autos.jpg" /> <br>
+                    <a class="link-saiba-mais">Saiba mais</a>
+                </div>
+                <div class="linhas-produtos">
+                    <h4 class="produtos-h4">Peças Estampadas<br>para Escapamentos</h4>
+                    <img class="produtos-grid-img" src="./assets/mainpage/linha-escapamento.png" /> <br>
+                    <a class="link-saiba-mais">Saiba mais</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="nossos-clientes">
+            <div id="empresas">
+                <h2 id="clientes-h2">Nossos clientes</h2>
+                <p id="clientes-p">Empresas que nos escolheram como parceira em fabricação de peças</p>
+            </div>
+            <div id="img-slider">
+                <div id="img">
+                    <img id="slide" src="" />
+                    <h5 id="placeholder"><!-- TTo be filled by js --></h5>
+                </div>
+                <div id="slider-buttons">
+                    <button onclick="passSlide(true)" id="back-btn">
+                        < </button>
+                            <button onclick="passSlide(false)" id="front-btn"> > </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Entre em Contato Conosco</h2>
+            <p>A Metalúrgica OBF conta com uma fábrica localizada em Poá, em um centro fabril no lado leste da cidade.
+            </p>
+            <div id="contato-container">
+                <div id="contato-mapa">
+                    <iframe id="maps-iframe"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.6811883352834!2d-46.3333812!3d-23.5079901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce7bd0c9814b29%3A0x205533186cb8b0ed!2sMetal%C3%BArgica%20OBF%20(Oreste%20Barreira%20M.E)!5e0!3m2!1spt-BR!2sbr!4v1792763710084!5m2!1spt-BR!2sbr"
+                        width="640" height="320" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+                <form method="dialog" id="contato-email">
+                    <label>Nome</label> <br>
+                    <input type="text" placeholder="Seu nome" name="name" />
+                    <br>
+                    <label>E-mail</label> <br>
+                    <input type="email" placeholder="Seu e-mail" name="email" />
+                    <br>
+                    <label>Empresa</label> <br>
+                    <input type="text" placeholder="Sua empresa" name="empresa" />
+                    <br>
+                    <label>Mensagem</label> <br>
+                    <textarea placeholder="O que você quer falar?" name="message" style="height: 90px;"></textarea>
+                    <br>
+                    <button type="submit">Envie sua mensagem</button>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div id="info-column" class="footer-columns">
+            <img width="125px" src="./assets/logos/obf-white.webp" />
+            <p><i>Com mais de 30 anos de experiência, atendendo e buscando sempre a melhor solução.</i></p>
+            <ul id="social-media">
+                <li>
+                    <a href="https://www.instagram.com/obf_metalurgica/" target="_blank">
+                        <img class="social-media-pics" src="./assets/social-media/instagram.svg" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://wa.me/5511967219001" target="_blank">
+                        <img class="social-media-pics" src="./assets/social-media/whatsapp.svg" alt="Whatsapp">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://share.google/pDFJxwhlDsNlLigcN" target="_blank">
+                        <img class="social-media-pics" src="./assets/social-media/google.svg" alt="Google">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div id-"products-column" class="footer-columns">
+            <p class="column-title">Nossos produtos</p>
+            <ul>
+                <li>
+                    <a class="column-links">Peças para automóveis</a>
+                </li>
+                <li>
+                    <a class="column-links">Peças para bicicletas</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id-"contacts-column" class="footer-columns">
+            <p class="column-title">Links para contato</p>
+            <ul>
+                <li>
+                    Telefone Fixo: <br>
+                    <a class="column-links" href="tel://1146397816">(11) 4639-7816</a>
+                </li>
+                <li>
+                    E-mail: <br>
+                    <a class="column-links"
+                        href="mailto://oreste.barreiram.e@gmail.com">oreste.barreiram.e@gmail.com</a>
+                </li>
+                <li>
+                    Endereço: <br>
+                    <a class="column-links" href="https://maps.app.goo.gl/VjqthBJTDVHQ3ddt7">
+                        R. Lisboa, n°150 - Vila Varela, Poá -SP, 08558-110</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id-"links-column" class="footer-columns">
+            <p class="column-title">Links para acesso rápido</p>
+            <ul>
+                <li>
+                    <a class="column-links" href="./sobre.html">Sobre nós</a>
+                </li>
+                <li>
+                    <a class="column-links" href="./linhas.html">Nossas peças</a>
+                </li>
+                <li>
+                    <a class="column-links" href="./contato.html">Entre em contato</a>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <div id="copyright">
+        <p>Copyright © 2026 Oreste Barreira Metalúrgica</p>
+    </div>
+
+    <a href="https://wa.me/5511967219001" target="_blank">
+        <img id="whatsapp-link" src="./assets/social-media/whatsapp.svg" alt="Whatsapp">
+    </a>
+</body>
+
+<script src="./scripts/burguer.js"></script>
+<script src="./scripts/slider.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="./scripts/contact.js"></script>
+
+</html>
