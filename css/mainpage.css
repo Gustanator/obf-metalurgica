@@ -120,6 +120,7 @@
 
 #info-p {
     font-size: 14px;
+    text-align: center;
 }
 
 /* "Nossos produtos" section */
@@ -296,6 +297,8 @@
 }
 
 #contato-email {
+    width: 25vw;
+
     label {
         color: white;
         font-weight: 600;
@@ -454,6 +457,10 @@
     #maps-iframe {
         width: 360px;
     }
+
+    #contato-email {
+        width: 360px;
+    }
 }
 
 /* Mobile (smartphones) */
@@ -545,6 +552,7 @@
     }
 
     #contato-email {
+        width: 90vw;
         button {
             font-size: 20px;
             font-weight: 600;

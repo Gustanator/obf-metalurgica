@@ -51,6 +51,12 @@ let produtosEscapamento =
         { src: "https://gustanator.github.io/obf-metalurgica/assets/products/escapes/05.jpg", header: "OB-05A", text: 'Abraçadeira do escapamento 2.3/4"' }
     ]
 
+window.addEventListener("DOMContentLoaded", () => {
+    if (window.location.hash === '#autos') createList(produtosAutomovel)
+    else if (window.location.hash === '#bikes') createList(produtosBicicleta)
+    else if (window.location.hash === '#escapes') createList(produtosEscapamento)
+})
+
 function createList(array) {
     let result = ``
     for (const product in array) {

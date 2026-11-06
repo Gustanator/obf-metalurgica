@@ -71,9 +71,8 @@
 }
 
 .linhas-produtos:hover {
-    transform: translateY(-6px);
     transition-duration: 400ms;
-    background-color: #222;
+    background-color: #111;
 }
 
 /* Grade de produtos */
