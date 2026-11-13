@@ -206,72 +206,6 @@
     height: 144px;
 }
 
-/* "Nossos clientes" section */
-
-#nossos-clientes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    height: fit-content;
-    color: black;
-    background-color: white;
-    padding: 20px 100px;
-}
-
-/* Grid de imagens */
-
-#img-slider {
-    display: flex;
-    flex-direction: column;
-}
-
-#img {
-    height: 90px;
-    width: 180px;
-    border: 1px solid #333;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-
-#slide {
-    height: 100%;
-    object-fit: cover;
-}
-
-#placeholder {
-    margin-top: 5px;
-}
-
-#slider-buttons {
-    button {
-        position: relative;
-        top: -60px;
-
-        height: 32px;
-        width: 32px;
-        font-size: 20px;
-
-        background-color: transparent;
-        border-color: #333;
-        border-radius: 20px;
-    }
-
-    button:hover {
-        opacity: 50%;
-    }
-}
-
-#back-btn {
-    right: 100px;
-}
-
-#front-btn {
-    left: 100px;
-}
-
 /* "Entre em Contato Conosco" section */
 
 #contato {
@@ -283,6 +217,7 @@
     color: white;
     background-color: red;
     padding: 20px 100px;
+    margin-top: 25px;
 }
 
 #contato-container {
