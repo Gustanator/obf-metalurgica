@@ -50,7 +50,8 @@
 }
 
 #texto {
-    max-width: 60vw;
+    max-width: 40vw;
+
     p {
         font-size: 17px;
     }
@@ -60,6 +61,12 @@
     height: 40vh;
     border: 2px solid rgba(80, 80, 80, 0.3);
     border-radius: 20px;
+}
+
+@media (max-width: 1360px) {
+    #texto {
+        max-width: 60vw;
+    }
 }
 
 @media (max-width: 1020px) {
