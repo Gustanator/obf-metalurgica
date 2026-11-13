@@ -50,6 +50,7 @@
 }
 
 #texto {
+    max-width: 60vw;
     p {
         font-size: 17px;
     }
