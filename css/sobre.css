@@ -45,23 +45,23 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
     margin: 50px 100px;
 }
 
 #texto {
     p {
-        font-size: 20px;
-        font-weight: 400;
+        font-size: 17px;
     }
 }
 
 #historia-img {
-    height: 50vh;
-    border-radius: 10px;
+    height: 40vh;
+    border: 2px solid rgba(80, 80, 80, 0.3);
+    border-radius: 20px;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1020px) {
     /* Sobre nós" header */
 
     #sobre {
@@ -81,8 +81,13 @@
         margin: 30px;
     }
 
+    #texto {
+        width: 80vw;
+    }
+
     #historia-img {
-        height: 80vw;
+        height: auto;
+        width: 80vw;
         border-radius: 10px;
     }
 }
