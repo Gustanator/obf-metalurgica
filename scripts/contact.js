@@ -7,7 +7,7 @@ contatoEmail.addEventListener("submit", event => {
         publicKey: "B8jBarFkBUNOnFPU9",
     })
 
-    emailjs.sendForm("service_38f4tzi", "template_contact", contatoEmail)
+    emailjs.sendForm("service_vendas", "template_contact", contatoEmail)
         .then((response) => { alert("Mensagem enviada com sucesso!"); })
         .catch((error) => {
             alert("Ocorreu um erro com o envio do seu e-mail");
